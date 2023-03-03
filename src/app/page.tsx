@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
+import { StyledTitle } from './page.styled'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -8,6 +9,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <StyledTitle className={styles.title}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </StyledTitle>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
