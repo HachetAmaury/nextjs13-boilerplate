@@ -397,3 +397,27 @@ yarn component:headless
 ```bash
 npx storybook@next init
 ```
+
+## 7 - API testing
+
+### Install supertest
+
+```bash
+yarn add -D supertest
+```
+
+### Create a **tests**/api/hello.test.ts file
+
+```js
+import request from 'supertest'
+import { expect, test } from 'vitest'
+
+test('GET /hello', async () => {
+  const response = await request('http://localhost:3000').get('/api/hello')
+
+  expect(response.status).toEqual(200)
+
+  const text = await response.text
+  expect(text).toBe('Hello, Next.js!')
+})
+```
