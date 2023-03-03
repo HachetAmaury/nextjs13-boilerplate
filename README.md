@@ -391,3 +391,9 @@ yarn component:headless
 
 ✨  Done in 8.57s.
 ```
+
+## 6 - Storybook
+
+```bash
+npx storybook@next init
+```
