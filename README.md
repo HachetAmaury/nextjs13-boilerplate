@@ -10,3 +10,10 @@
 - React Testing Library
 - Storybook
 - Cypress
+
+
+# 1 - NextJs 13 
+
+```bash
+    npx create-next-app --ts
+```
